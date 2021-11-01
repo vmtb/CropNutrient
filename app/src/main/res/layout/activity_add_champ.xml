@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".content.champs.AddChamp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_above="@+id/bottom_btn"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:id="@+id/layout_legend"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="#000"
+                    android:id="@+id/tv_legend"
+                    android:textSize="16sp"
+                    android:singleLine="true"
+                    android:text="Ajout d'un nouveau champ"/>
+
+                <Spinner
+                    android:id="@+id/prod"
+                    android:maxHeight="200dp"
+                    android:layout_width="match_parent"
+                    android:background="@android:drawable/editbox_background"
+                    android:layout_margin="10dp"
+                    android:maxLength="500"
+                    android:hint="Producteur"
+                    android:layout_height="wrap_content"
+                    android:minHeight="50dp"/>
+
+                <EditText
+                    android:id="@+id/champ"
+                    android:maxHeight="200dp"
+                    android:layout_width="match_parent"
+                    android:background="@android:drawable/editbox_background"
+                    android:layout_margin="10dp"
+                    android:maxLength="500"
+                    android:hint="Identifiant du champ"
+                    android:layout_height="wrap_content"
+                    android:minHeight="50dp"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_margin="10dp"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:id="@+id/superficie"
+                        android:maxHeight="200dp"
+                        android:layout_width="match_parent"
+                        android:background="@android:drawable/editbox_background"
+                        android:inputType="numberDecimal"
+                        android:hint="Superficie"
+                        android:layout_height="wrap_content"
+                        android:layout_toStartOf="@+id/unite"
+                        android:layout_alignParentStart="true"
+                        android:minHeight="50dp"/>
+
+                    <Spinner
+                        android:id="@+id/unite"
+                        android:layout_width="100dp"
+                        android:background="@android:drawable/editbox_background"
+                        android:inputType="number"
+                        android:hint="Unité"
+                        android:layout_alignParentRight="true"
+                        android:layout_height="wrap_content"
+                        android:minHeight="50dp"/>
+
+                </RelativeLayout>
+
+                <Spinner
+                    android:id="@+id/zone"
+                    android:maxHeight="200dp"
+                    android:layout_width="match_parent"
+                    android:background="@android:drawable/editbox_background"
+                    android:layout_margin="10dp"
+                    android:inputType="number"
+                    android:hint="Zone agro-écologique"
+                    android:layout_height="wrap_content"
+                    android:minHeight="50dp"/>
+
+                <Spinner
+                    android:id="@+id/region"
+                    android:maxHeight="200dp"
+                    android:layout_width="match_parent"
+                    android:background="@android:drawable/editbox_background"
+                    android:layout_margin="10dp"
+                    android:inputType="number"
+                    android:hint="Région agro-écologique"
+                    android:layout_height="wrap_content"
+                    android:minHeight="50dp"/>
+            </LinearLayout>
+
+
+            <com.google.android.material.chip.Chip
+                android:layout_width="match_parent"
+                android:text="Choisissez la matière"
+                android:textColor="#000"
+                android:id="@+id/chip_matiere"
+                app:checkedIconVisible="true"
+                app:checkedIconEnabled="true"
+                app:chipCornerRadius="10dp"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                android:layout_marginStart="1dp"
+                android:textSize="10sp"
+                android:visibility="gone"
+                android:layout_gravity="center"
+                style="@style/Widget.MaterialComponents.Chip.Action"
+                android:layout_height="55dp"
+                tools:ignore="SmallSp" />
+
+            <EditText
+                android:id="@+id/ed_matiere"
+                android:maxHeight="50dp"
+                android:layout_width="match_parent"
+                android:background="@android:drawable/editbox_background"
+                android:layout_margin="10dp"
+                android:singleLine="true"
+                android:visibility="gone"
+                android:maxLength="40"
+                android:hint="Saisir la nouvelle matière..."
+                android:layout_height="50dp" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:padding="5dp"
+        android:id="@+id/bottom_btn"
+        android:layout_marginBottom="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+            android:id="@+id/middle"
+            android:layout_centerInParent="true"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_toStartOf="@id/middle"
+            android:layout_alignParentLeft="true"
+            android:gravity="center"
+            android:layout_toLeftOf="@id/middle"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:id="@+id/back"
+            android:text="Annuler"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/middle"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@id/middle"
+            android:layout_alignParentEnd="true"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:id="@+id/save"
+            android:text="Sauvegarder" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
+
+<!--
+
+<LinearLayout
+android:layout_width="match_parent"
+android:orientation="vertical"
+android:id="@+id/header"
+android:layout_height="wrap_content">
+<com.google.android.material.appbar.AppBarLayout
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="#fff"
+    android:gravity="center_vertical"
+    android:id="@+id/un">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:padding="5dp"
+            android:layout_marginStart="10dp"
+            android:id="@+id/img"
+            android:layout_centerVertical="true"
+            android:background="@drawable/background_ripple_circle"
+            android:src="@drawable/ic_arrow_back_black_24dp"/>
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_toStartOf="@+id/post"
+            android:layout_toEndOf="@+id/img"
+            android:layout_toRightOf="@+id/img"
+            android:gravity="center"
+            android:textAlignment="center">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textColor="#000"
+                android:fontFamily="sans-serif-condensed"
+                android:text="ChatZone"/>
+        </androidx.appcompat.widget.Toolbar>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:id="@+id/post"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/background_ripple_circle_primary"
+            android:text="Publier"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_alignParentEnd="true"/>
+
+    </RelativeLayout>
+
+
+</com.google.android.material.appbar.AppBarLayout>
+
+
+<TextView
+    android:layout_width="match_parent"
+    android:background="#E8E4E2"
+    android:layout_alignParentBottom="true"
+    android:layout_height="2dp"/>
+</LinearLayout>
+-->

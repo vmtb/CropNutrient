@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "489046716210",
+    "project_id": "crop-nutrient",
+    "storage_bucket": "crop-nutrient.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:489046716210:android:3e2013d7e2be8e1633712b",
+        "android_client_info": {
+          "package_name": "com.vibe_viroma.cropnutrient"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "489046716210-cg1oegieujqrrl24ca9e9k65cst9494j.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.vibe_viroma.cropnutrient",
+            "certificate_hash": "de8bbe04e790763a0e25049ebac59b7242b83ea8"
+          }
+        },
+        {
+          "client_id": "489046716210-cgq6v23m6b314gnv58efjkbqdd8dd3fv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB6M9eVib3YhL3o9_QAWPzXbntj72uAJsM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "489046716210-cgq6v23m6b314gnv58efjkbqdd8dd3fv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

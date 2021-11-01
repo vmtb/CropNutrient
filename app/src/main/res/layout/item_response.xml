@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:padding="10dp"
+    android:background="@drawable/btn_rounded_white"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:text="Nom du champ"
+        android:id="@+id/name"
+        android:textStyle="bold"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="7dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/middle"
+            android:layout_centerInParent="true"
+            android:textSize="13sp"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:text="Photos: "/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_toStartOf="@id/middle"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@id/middle"
+            android:textSize="13sp"
+            android:textColor="@color/black"
+            android:id="@+id/superficie"
+            android:singleLine="true"
+            android:text="Superficie: "/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/middle"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@id/middle"
+            android:layout_alignParentEnd="true"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:id="@+id/prod"
+            android:singleLine="true"
+            android:text="Producteur:" />
+    </RelativeLayout>
+
+
+</LinearLayout>

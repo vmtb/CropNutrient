@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Entrez le nom du nouveau producteur"
+        android:textSize="13sp"
+        android:gravity="center"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:id="@+id/idPhoto"
+        android:layout_width="match_parent"
+        android:background="@android:drawable/editbox_background"
+        android:layout_margin="10dp"
+        android:maxLength="500"
+        android:singleLine="true"
+        android:hint="Nom Prénom"
+        android:layout_height="wrap_content"
+        android:minHeight="50dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:id="@+id/save"
+        android:text="Sauvegarder" />
+</LinearLayout>
